@@ -1,138 +1,60 @@
-- ? !!python/object/new:homeassistant.util.yaml.objects.NodeStrClass
-    args:
-    - sensor
-    state: &id001
-      __config_file__: /config/custom_components/localtuya/templates/Parkside_PMRDA_20-Li_B2.yaml
-      __line__: 1
-  : entity_category: None
+- sensor:
+    entity_category: diagnostic
     friendly_name: Battery Percentage
     icon: ''
     id: '6'
-    platform: !!python/object/new:homeassistant.util.yaml.objects.NodeStrClass
-      args:
-      - sensor
-      state: *id001
+    platform: sensor
     unit_of_measurement: '%'
-- ? !!python/object/new:homeassistant.util.yaml.objects.NodeStrClass
-    args:
-    - sensor
-    state: &id002
-      __config_file__: /config/custom_components/localtuya/templates/Parkside_PMRDA_20-Li_B2.yaml
-      __line__: 8
-  : entity_category: diagnostic
+- sensor:
+    entity_category: diagnostic
     friendly_name: Machine Status
     icon: ''
     id: '101'
-    platform: !!python/object/new:homeassistant.util.yaml.objects.NodeStrClass
-      args:
-      - sensor
-      state: *id002
-- ? !!python/object/new:homeassistant.util.yaml.objects.NodeStrClass
-    args:
-    - sensor
-    state: &id003
-      __config_file__: /config/custom_components/localtuya/templates/Parkside_PMRDA_20-Li_B2.yaml
-      __line__: 14
-  : entity_category: diagnostic
+    platform: sensor
+- sensor:
+    entity_category: diagnostic
     friendly_name: Machine Error
     icon: ''
     id: '102'
-    platform: !!python/object/new:homeassistant.util.yaml.objects.NodeStrClass
-      args:
-      - sensor
-      state: *id003
-- ? !!python/object/new:homeassistant.util.yaml.objects.NodeStrClass
-    args:
-    - sensor
-    state: &id004
-      __config_file__: /config/custom_components/localtuya/templates/Parkside_PMRDA_20-Li_B2.yaml
-      __line__: 20
-  : entity_category: diagnostic
+    platform: sensor
+- sensor:
+    entity_category: diagnostic
     friendly_name: Machine Warning
-    icon: ''
     id: '103'
-    platform: !!python/object/new:homeassistant.util.yaml.objects.NodeStrClass
-      args:
-      - sensor
-      state: *id004
-- ? !!python/object/new:homeassistant.util.yaml.objects.NodeStrClass
-    args:
-    - sensor
-    state: &id005
-      __config_file__: /config/custom_components/localtuya/templates/Parkside_PMRDA_20-Li_B2.yaml
-      __line__: 25
-  : entity_category: diagnostic
+    platform: sensor
+- sensor:
+    entity_category: diagnostic
     friendly_name: Machine Password
-    icon: ''
     id: '106'
-    platform: !!python/object/new:homeassistant.util.yaml.objects.NodeStrClass
-      args:
-      - sensor
-      state: *id005
-- ? !!python/object/new:homeassistant.util.yaml.objects.NodeStrClass
-    args:
-    - switch
-    state: &id006
-      __config_file__: /config/custom_components/localtuya/templates/Parkside_PMRDA_20-Li_B2.yaml
-      __line__: 30
-  : entity_category: config
+    platform: sensor
+- switch:
+    entity_category: None
     friendly_name: Machine Rain Mode
-    icon: ''
     id: '104'
     is_passive_entity: false
-    platform: !!python/object/new:homeassistant.util.yaml.objects.NodeStrClass
-      args:
-      - switch
-      state: *id006
+    platform: switch
     restore_on_reconnect: false
-- ? !!python/object/new:homeassistant.util.yaml.objects.NodeStrClass
-    args:
-    - number
-    state: &id007
-      __config_file__: /config/custom_components/localtuya/templates/Parkside_PMRDA_20-Li_B2.yaml
-      __line__: 37
-  : entity_category: config
+- number:
+    entity_category: config
     friendly_name: Machine Work time
-    icon: ''
     id: '105'
     is_passive_entity: false
     max_value: 24.0
     min_value: 1.0
-    platform: !!python/object/new:homeassistant.util.yaml.objects.NodeStrClass
-      args:
-      - number
-      state: *id007
+    platform: number
     restore_on_reconnect: false
     step_size: 1.0
-- ? !!python/object/new:homeassistant.util.yaml.objects.NodeStrClass
-    args:
-    - sensor
-    state: &id008
-      __config_file__: /config/custom_components/localtuya/templates/Parkside_PMRDA_20-Li_B2.yaml
-      __line__: 47
-  : entity_category: diagnostic
+- sensor:
+    entity_category: diagnostic
     friendly_name: Machine Cover Open
-    icon: ''
     id: '116'
-    platform: !!python/object/new:homeassistant.util.yaml.objects.NodeStrClass
-      args:
-      - sensor
-      state: *id008
-- ? !!python/object/new:homeassistant.util.yaml.objects.NodeStrClass
-    args:
-    - select
-    state: &id009
-      __config_file__: /config/custom_components/localtuya/templates/Parkside_PMRDA_20-Li_B2.yaml
-      __line__: 52
-  : entity_category: config
-    friendly_name: Control
-    icon: ''
+    platform: sensor
+- select:
+    entity_category: config
+    friendly_name: ''
     id: '115'
     is_passive_entity: false
-    platform: !!python/object/new:homeassistant.util.yaml.objects.NodeStrClass
-      args:
-      - select
-      state: *id009
+    platform: select
     restore_on_reconnect: false
     select_options:
       CancelWork: Cancel
@@ -141,31 +63,13 @@
       StartFixedMowing: Start Spot Mowing
       StartMowing: Start Mowing
       StartReturnStation: Return Home
-- ? !!python/object/new:homeassistant.util.yaml.objects.NodeStrClass
-    args:
-    - button
-    state: &id010
-      __config_file__: /config/custom_components/localtuya/templates/Parkside_PMRDA_20-Li_B2.yaml
-      __line__: 66
-  : entity_category: diagnostic
+- button:
+    entity_category: config
     friendly_name: Clear Schedule
-    icon: ''
     id: '107'
-    platform: !!python/object/new:homeassistant.util.yaml.objects.NodeStrClass
-      args:
-      - button
-      state: *id010
-- ? !!python/object/new:homeassistant.util.yaml.objects.NodeStrClass
-    args:
-    - button
-    state: &id011
-      __config_file__: /config/custom_components/localtuya/templates/Parkside_PMRDA_20-Li_B2.yaml
-      __line__: 71
-  : entity_category: diagnostic
+    platform: button
+- button:
+    entity_category: config
     friendly_name: Query Schedule
-    icon: ''
     id: '108'
-    platform: !!python/object/new:homeassistant.util.yaml.objects.NodeStrClass
-      args:
-      - button
-      state: *id011
+    platform: button
