@@ -7,7 +7,7 @@ Lawnmower:
 
 The devices below are automatically integrated in xZetsubou / hass-localtuya, but the templates have been saved for future use:
 Switches:
-- Homlbi Smart Socket EU (HBSS-0109)
+- Hombli Smart Socket EU (HBSS-0109)
 
 Outdoor Lighting:
 - LSC RGB Floodlight (Sold By Action in the Netherlands as Outdoor Flood Light (LSC 3200719)).
