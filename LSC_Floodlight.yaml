@@ -1,0 +1,27 @@
+- light:
+    brightness: '22'
+    brightness_lower: 10
+    brightness_upper: 1000
+    color: '24'
+    color_mode: '21'
+    color_temp_max_kelvin: 6500
+    color_temp_min_kelvin: 2700
+    color_temp_reverse: false
+    entity_category: None
+    friendly_name: null
+    icon: ''
+    id: '20'
+    music_mode: true
+    platform: light
+    scene: '25'
+- number:
+    entity_category: config
+    friendly_name: Light 1 Timer
+    icon: mdi:timer
+    id: '26'
+    max_value: 86400
+    min_value: 0
+    platform: number
+    scaling: 1.0
+    step_size: 1
+    unit_of_measurement: s
