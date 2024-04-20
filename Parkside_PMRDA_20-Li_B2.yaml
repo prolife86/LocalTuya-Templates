@@ -1,5 +1,5 @@
 - sensor:
-    entity_category: diagnostic
+    entity_category: None
     friendly_name: Battery Percentage
     icon: ''
     id: '6'
@@ -28,7 +28,7 @@
     id: '106'
     platform: sensor
 - switch:
-    entity_category: None
+    entity_category: config
     friendly_name: Machine Rain Mode
     id: '104'
     is_passive_entity: false
@@ -51,7 +51,7 @@
     platform: sensor
 - select:
     entity_category: config
-    friendly_name: ''
+    friendly_name: Control
     id: '115'
     is_passive_entity: false
     platform: select
@@ -64,12 +64,12 @@
       StartMowing: Start Mowing
       StartReturnStation: Return Home
 - button:
-    entity_category: config
+    entity_category: diagnostic
     friendly_name: Clear Schedule
     id: '107'
     platform: button
 - button:
-    entity_category: config
+    entity_category: diagnostic
     friendly_name: Query Schedule
     id: '108'
     platform: button
